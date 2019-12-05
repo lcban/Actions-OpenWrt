@@ -17,8 +17,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-   watch:
-     types: [started]
+#    watch:
+#      types: [started]
 
 jobs:
   build:
@@ -104,5 +104,5 @@ jobs:
     - name : Upload targets
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt firmware
-        path: openwrt/bin/targets
+#        name: OpenWrt firmware
+#        path: openwrt/bin/targets
